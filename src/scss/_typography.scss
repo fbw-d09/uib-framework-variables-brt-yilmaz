@@ -1,8 +1,14 @@
-h1,
-article {
-  font-size: $small;
+@use 'variables' as *;
+
+h1 {
+  margin: 2rem auto;
+  width: 60%;
+  text-align: center;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
 p {
   font-size: $tiny;
 }
@@ -12,10 +18,4 @@ a {
   font-size: 1.2rem;
 }
 
-.card-text,
-a,
-h1,
-aside,
-article {
-  font-family: $primary-font;
-}
+

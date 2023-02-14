@@ -5,109 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Fran's Project woo</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="/dist/main.css" />
   </head>
   <body>
-    <nav>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-    </nav>
-    <header>
-      <h1>My personal website!</h1>
-    </header>
+    <div class="grid">
+      <nav class="nav">
+        <ul class="nav-items__container">
+          <li class="nav__item">
+            <a class="nav__item__link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item__link" href="#">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div
-      class="
-        cards
-        d-flex
-        flex-lg-row flex-sm-column
-        justify-content-between
-        align-items-sm-center
-      "
-    >
-      <div class="card mb-4" style="width: 18rem">
-        <img src="images/mountain.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Mountains</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+      <header>
+        <h1>My personal website!</h1>
+      </header>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card__inhalt">
+            <div class="card__img-container">
+              <img src="images/mountain.jpg" alt="mountain" />
+            </div>
+
+            <div class="card__content">
+              <h2>Mountains</h2>
+              <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatum natus eos dicta ex deleniti consequuntur quod praesentium dolore rem. Nulla rem eius saepe natus ullam delectus incidunt voluptatem dolorem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__inhalt">
+            <div class="card__img-container">
+              <img src="images/surfer.jpg" class="" alt="..." />
+            </div>
+
+            <div class="card__content">
+              <h2>Surfer</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, dignissimos animi accusamus itaque repellendus, fuga ducimus temporibus modi laudantium vel officiis obcaecati reprehenderit? Distinctio harum quis laborum ratione, quisquam nesciunt!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__inhalt">
+            <div class="card__img-container">
+              <img src="images/tree.jpg" class="" alt="..." />
+            </div>
+
+            <div class="card__content">
+              <h2>Tree</h2>
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat pariatur architecto officia, libero voluptate similique laudantium recusandae eveniet quos quis numquam voluptatibus. Commodi, illo voluptate. Quos iure rerum sint.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card mb-4" style="width: 18rem">
-        <img src="images/surfer.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Surfer</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+
+      <main class="main">
+        <aside class="aside-1">
+          <h2>Aside</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse optio nam error illum aspernatur consequuntur dolor quam eligendi accusamus a inventore expedita delectus, hic dignissimos, ipsam quia aliquam, reprehenderit aliquid!
+            Quis, architecto, accusamus laboriosam fugit asperiores aperiam cum animi inventore officiis omnis molestias odit. Ipsam libero ea quia ipsum tempore asperiores et. Laudantium illo in eos, numquam saepe doloribus laborum!
           </p>
-        </div>
-      </div>
-      <div class="card mb-4" style="width: 18rem">
-        <img src="images/tree.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Tree</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+        </aside>
+
+        <article>
+          <h2>Article</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia nisi, perspiciatis incidunt voluptatem, necessitatibus reprehenderit impedit, ipsum magni magnam quidem sunt? Maxime nesciunt aspernatur molestias accusantium aliquid laborum eligendi et?
+            Explicabo natus odio nam quisquam vel sapiente nemo dolorum maiores modi reprehenderit sed aperiam, animi iste minus magnam vitae nobis amet eaque excepturi illum. Reiciendis excepturi ipsam repellat neque harum!
+            Quibusdam officiis repudiandae praesentium facilis quo assumenda. Quaerat expedita totam quo blanditiis modi iste laboriosam sint culpa cumque quasi, nemo sequi explicabo laudantium? Consectetur, veniam accusamus. Deleniti qui nam ex.
           </p>
-        </div>
-      </div>
+        </article>
+
+        <aside class="aside-2">
+          <h2>Aside 2</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium pariatur ipsum impedit odio, modi sit nulla. Ea, sed quas ut tenetur veritatis at tempora, in doloribus et ullam facilis laudantium?
+            Suscipit, numquam ad. Blanditiis cumque repudiandae sequi eveniet commodi odio adipisci repellat autem tenetur nisi sit, ab quibusdam, obcaecati iure nihil ipsa aperiam totam tempora placeat molestias modi, inventore sunt!
+          </p>
+        </aside>
+      </main>
+
+      <footer class="footer">
+        <ul class="footer__items">
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Codpen</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </footer>
     </div>
-
-    <main class="d-flex">
-      <aside>
-        <h3>Aside</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          aperiam iste voluptatibus ipsum, illum, quis repudiandae sed inventore
-          ea cupiditate et voluptatem quod, ab commodi doloremque suscipit
-          veniam alias accusantium.
-        </p>
-      </aside>
-
-      <article>
-        <h2>Article</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          quo porro consectetur reiciendis, distinctio non? Nisi ipsum corporis
-          quasi iste tempore beatae dolorem quos deserunt quo? Nulla recusandae
-          facere illo.
-        </p>
-      </article>
-
-      <aside>
-        <h3>Aside 2</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          aperiam iste voluptatibus ipsum, illum, quis repudiandae sed inventore
-          ea cupiditate et voluptatem quod, ab commodi doloremque suscipit
-          veniam alias accusantium.
-        </p>
-      </aside>
-    </main>
-
-    <footer>
-      <ul class="d-flex justify-content-space-between">
-        <li><a href="#">Github</a></li>
-        <li><a href="#">Codpen</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
-    </footer>
     <!-- Custom scripts, edit above this line -->
     <script src="scripts/index.js"></script>
   </body>

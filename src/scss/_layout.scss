@@ -1,80 +1,66 @@
-nav {
-  a {
-    color: $primary-color;
+@use "variables" as *;
+@use 'mixins' as *;
+
+body {
+  padding-top: 1rem;
+}
+
+.nav {
+  padding-right: 2rem;
+  &-items__container { //.nav nav-items__container
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    @include medium {
+      justify-content: flex-end;
+      gap: 2rem
+    }
+  }
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 1.5rem;
+}
+
+.card-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  @include medium {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
   }
 }
 
-header {
-  height: $huge;
-  background-image: url('../../images/header.jpg');
-  background-size: cover;
-  text-align: center;
-}
-
-.card {
-  background-color: $border-color;
-  border: $border-size solid $border-color;
-  border-radius: 5px;
-
-  .img {
-    background-size: cover;
-    height: $large;
-    width: 100%;
-    background-position: center;
-  }
-}
-
-main {
-  aside {
-    border: $border-size solid $border-color;
-  }
-}
-
-footer {
+.footer{
   background-color: $primary-color;
-  a {
-    color: white;
+  
+  &__items {
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    & a {
+      color: white;
+    }
+    
   }
 }
-
-// @media screen and (min-width: $tablet) {
-//   .card {
-//     flex-flow: row nowrap;
-//     align-items: flex-start;
-//     width: 80%;
-//     margin: 0.5rem;
-//     &-text {
-//       padding: 0 $tiny $tiny $tiny;
-//     }
-//   }
-
-//   nav {
-//     ul {
-//       justify-content: flex-end;
-//     }
-//   }
-
-//   main {
-//     flex-flow: row;
-//     aside {
-//       width: 25%;
-//     }
-//     article {
-//       width: 50%;
-//     }
-//   }
-// }
-
-// @media screen and (min-width: $desktop) {
-//   .cards {
-//     flex-direction: row;
-//     justify-content: center;
-//     text-align: center;
-//   }
-//   .card {
-//     flex-basis: 1;
-//     .img {
-//       width: 44%;
-//     }
-//   }
-// }
+  

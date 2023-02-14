@@ -1,6 +1,49 @@
 // This is where you can import other stylesheets or write your scss code
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "reset/reset.scss";
-@import "variables/variables.scss";
-@import "typography/typography.scss";
-@import "layout/layout";
+@use "reset" as *;
+@use "variables" as *;
+@use "typography" as *;
+@use "layout" as *;
+
+
+.card__inhalt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: $card-bg;
+  border-radius: 5px;
+  flex: 1 1 444.5px;
+
+  &__img-container {
+    flex: 1 1 209px;
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    flex: 1 1 418px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 85vh;
+  background-image: url('/src/images/header.jpg');
+  background-size: cover;
+}
+
+.aside-1,
+.aside-2 {
+  border: $border-size solid $border-color;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+
