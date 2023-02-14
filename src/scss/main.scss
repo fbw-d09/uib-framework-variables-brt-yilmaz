@@ -4,28 +4,28 @@
 @use "typography" as *;
 @use "layout" as *;
 
-.card-container {
-  margin: 0 auto;
-  width: 90%;
+
+.card__inhalt {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 2rem;
 }
+
 .card {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  padding: 1rem;
   background-color: $card-bg;
   border-radius: 5px;
+  flex: 1 1 444.5px;
 
   &__img-container {
-    margin-bottom: 2rem;
+    flex: 1 1 209px;
     & img {
       width: 100%;
     }
+  }
+
+  &__content {
+    flex: 1 1 418px;
   }
 }
 

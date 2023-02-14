@@ -2,31 +2,51 @@
 @use 'mixins' as *;
 
 body {
-}
-.grid {
-  padding: 5vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-  gap: 1.5rem;
+  padding-top: 1rem;
 }
 
 .nav {
-
+  padding-right: 2rem;
   &-items__container { //.nav nav-items__container
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+    @include medium {
+      justify-content: flex-end;
+      gap: 2rem
+    }
   }
+
 }
 
-main {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 1.5rem;
+}
+
+.card-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.main {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1rem;
+
+  @include medium {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
 }
 
 .footer{
